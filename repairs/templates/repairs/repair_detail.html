@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали ремонта</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Детали ремонта</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/services/">Услуги</a>
+            <a href="/contact/">Контакты</a>
+            <a href="/about/">О нас</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Ремонт ID: {{ repair_id }}</h2>
+            <p>Здесь будут детали ремонта для телефона с ID {{ repair_id }}.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Сервисный центр</p>
+    </footer>
+</body>
+</html>
